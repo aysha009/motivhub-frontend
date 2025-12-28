@@ -9,6 +9,7 @@ import { useState,useEffect } from "react"
 import initialChannels from './channels'
 import Register from './components/Register.'
 import { CheckSession } from './services/Auth'
+import Profile from './components/Profile'
 
 
 
@@ -76,10 +77,12 @@ useEffect(() => {
           <Route path="/register" element={<Register />} />
           <Route path='channelForm' element={<ChannelForm/>}/>
           <Route path="home" element={ <Home/> } />
+          <Route path="profile" element={ <Profile/> } />
           <Route path="channelDetails" element={ <ChannelDetails
           newChannel={newChannel}
           handleChange={handleChange}
-          addChannel={addChannel} /> } />
+          addChannel={addChannel} /> } 
+          />
 
 
 

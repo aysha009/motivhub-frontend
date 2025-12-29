@@ -23,7 +23,7 @@ const Home = ({ }) => {
     <>
       <div className="home">
 
-        <h1>Channels</h1>
+        <br /><br />
 
 
         <div className="grid col-4">

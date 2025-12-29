@@ -1,0 +1,205 @@
+.post-form-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  margin: 9rem auto;
+  background-color: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.post-form-container h1 {
+  text-align: center;
+  margin-bottom: 1.9rem;
+  color: #333;
+}
+
+.post-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-form-container input,
+.post-form-container textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+
+.post-form-container button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2b2a2d;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.post-form-container button:hover {
+  background-color: #747377;
+  transform: translateY(-2px);
+}
+/* Post list (posts inside a channel) */
+.post {
+  margin: 2rem auto;
+  display: flex;
+
+}
+
+
+/* Post Details page */
+.postDetails {
+  max-width: 800px;
+  margin: 10rem auto;
+  padding: 2rem;
+  background-color:rgba(242, 241, 242, 0.899);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Comment section */
+.comment {
+  margin-top: 2rem;
+}
+
+.comment form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.comment input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.comment input:focus {
+  border-color: #080809;
+}
+
+.comment button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #111112;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comment button:hover {
+  background-color: #818186;
+}
+
+/* Comment cards */
+.comment .card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.comment .card h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Channel details page */
+.channelDetails {
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+
+/* Header section */
+.channel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 2rem;
+}
+
+.channel-header h1 {
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Add post button */
+.add-post-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #15141a;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add-post-btn:hover {
+  background-color: #626166;
+  transform: translateY(-2px);
+}
+
+/* Subtitle */
+.channel-subtitle {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+/* Post cards inside channel */
+.channelDetails .post {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Reuse card style */
+.channelDetails .card {
+  background-color: #f8f8f8;
+  padding: 1.4rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.channelDetails .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Text */
+.channelDetails .card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.channelDetails .card h3 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Link reset */
+.channelDetails .card a {
+  text-decoration: none;
+  color: inherit;
+}

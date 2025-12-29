@@ -1,6 +1,6 @@
 /* Page wrapper */
 .channel-page {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +9,11 @@
 
 /* Card */
 .channel-card {
-  background-color:rgba(242, 241, 242, 0.899);
-  width: 380px;
-  margin-bottom: 200px;
+ max-width: 500px;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 /* Title */
@@ -27,7 +26,7 @@
 .channel-card input,
 .channel-card textarea {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   padding: 0.75rem;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -45,7 +44,8 @@
   padding: 0.75rem;
   background: #000;
   color: white;
-  border: none;
+ font-size: large; 
+ border: none;
   border-radius: 8px;
   cursor: pointer;
 }

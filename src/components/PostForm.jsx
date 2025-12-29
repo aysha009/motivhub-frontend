@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CreatePost } from '../services/PostServices'
 import { useNavigate, useParams } from 'react-router-dom'
+import '../styles/post.css'
 
 const PostForm = () => {
   const navigate = useNavigate()
@@ -32,7 +33,7 @@ const PostForm = () => {
   }
 
   return (
-    <div>
+  <div className="post-form-container">
       <h1>Add New Post</h1>
 
       <form onSubmit={handleSubmit}>

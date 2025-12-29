@@ -7,6 +7,7 @@ import {
   DeleteComment,
 } from "../services/CommentServices"
 import { useParams } from "react-router-dom"
+import '../styles/post.css'
 
 const PostDetails = () => {
   const { id } = useParams()
@@ -72,7 +73,7 @@ const PostDetails = () => {
   }
 
   return (
-    <div className="postDetails">
+<div className="postDetails">
       <h1>{post && post.title}</h1>
 
       <div className="post">

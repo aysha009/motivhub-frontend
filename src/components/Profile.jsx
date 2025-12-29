@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { CheckSession } from '../services/Auth'
-import { GetMyChannels } from '../services/ChannelServies'
+import { GetMyChannels } from '../services/ChannelServices'
 import { Link } from 'react-router-dom'
 
 const Profile = () => {

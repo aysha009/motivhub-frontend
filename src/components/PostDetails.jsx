@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"
 import { GetPostById } from "../services/PostServices"
-import { GetCommentsByPost, CreateComment } from "../services/CommentServices"
+import {
+  GetCommentsByPost,
+  CreateComment,
+  UpdateComment,
+  DeleteComment,
+} from "../services/CommentServices"
 import { useParams } from "react-router-dom"
 
 const PostDetails = () => {
@@ -8,10 +13,12 @@ const PostDetails = () => {
 
   const [post, setPost] = useState(null)
   const [comments, setComments] = useState([])
+  const [editingId, setEditingId] = useState(null)
+  const [editContent, setEditContent] = useState("")
 
   const emptyComment = {
     post: id,
-    content: ""
+    content: "",
   }
 
   const [newComment, setNewComment] = useState(emptyComment)
@@ -40,11 +47,28 @@ const PostDetails = () => {
       const createdComment = await CreateComment(newComment)
       setNewComment(emptyComment)
       setComments([...comments, createdComment])
-
     } catch (error) {
       throw error
     }
+  }
 
+  const startEdit = (comment) => {
+    setEditingId(comment._id)
+    setEditContent(comment.content)
+  }
+
+  const handleUpdate = async (id) => {
+    const updatedComment = await UpdateComment(id, { content: editContent })
+    setComments(
+      comments.map((comment) => (comment._id === id ? updatedComment : comment))
+    )
+    setEditingId(null)
+    setEditContent("")
+  }
+
+  const handleDelete = async (id) => {
+    await DeleteComment(id)
+    setComments(comments.filter((comment) => comment._id !== id))
   }
 
   return (
@@ -55,7 +79,7 @@ const PostDetails = () => {
         <h3>Description: {post && post.body}</h3>
       </div>
 
-      <div className="comment" >
+      <div className="comment">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -70,7 +94,27 @@ const PostDetails = () => {
 
         {comments.map((comment) => (
           <div className="card" key={comment._id}>
-            <h2>{comment.content}</h2>
+            {editingId === comment._id ? (
+              <>
+                <input
+                  type="text"
+                  value={editContent}
+                  onChange={(e) => setEditContent(e.target.value)}
+                />
+                <button onClick={() => handleUpdate(comment._id)}>
+                  Update
+                </button>
+                <button onClick={() => setEditingId(null)}>Cancel</button>
+              </>
+            ) : (
+              <>
+                <h2>{comment.content}</h2>
+                <button onClick={() => startEdit(comment)}>Edit</button>
+                <button onClick={() => handleDelete(comment._id)}>
+                  Delete
+                </button>
+              </>
+            )}
           </div>
         ))}
       </div>

@@ -1,4 +1,6 @@
-import './App.css'
+import './styles/home.css'
+import './styles/channel.css'
+import './styles/profile.css'
 import Nav from './components/Nav'
 import SignIn from './components/SignIn'
 import { Routes, Route } from 'react-router-dom'

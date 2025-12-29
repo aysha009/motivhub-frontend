@@ -34,7 +34,8 @@ const ChannelForm = () => {
   }
 
   return (
-    <div>
+    <div className="channel-page">
+      <div className="channel-card">
       <h1>Add New Channel</h1>
 
       <form onSubmit={handleSubmit}>
@@ -55,6 +56,7 @@ const ChannelForm = () => {
 
         <button type="submit" onClick={handleSubmit}>Submit</button>
       </form>
+    </div>
     </div>
   )
 }

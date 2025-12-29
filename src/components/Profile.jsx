@@ -25,16 +25,21 @@ const Profile = () => {
     <>
       <div className="profile">
         <h1>Profile</h1>
+           <br></br>
         <h3>Name: {user.name}</h3>
-        <h5>Email: {user.email}</h5>
+        <h3>Email: {user.email}</h3>
+        <br></br>
+        <br />
+        <br />
 
         <h2>My Channels</h2>
-
+<br></br>
+<br />
         <div className="grid col-4">
           {channels.map((channel) => (
             <div className="card" key={channel._id}>
               <Link to={`/home/${channel._id}`}>
-                <h3>{channel.name}</h3>
+                <h4>{channel.name}</h4>
                 <p>{channel.description}</p>
               </Link>
             </div>

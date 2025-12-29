@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CreateChannel } from '../services/ChannelServies'
+import { CreateChannel } from '../services/ChannelServices'
 import { useNavigate } from 'react-router-dom'
 
 

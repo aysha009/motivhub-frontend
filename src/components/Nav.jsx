@@ -8,8 +8,10 @@ const Nav = () => {
         <NavLink to="home">Home</NavLink>
         <> </>
         <NavLink to="channelForm">Add Channel</NavLink>
-         <> </>
+        <> </>
+
         <NavLink to="profile">My Profile</NavLink>
+
       </div>
     </nav>
   )

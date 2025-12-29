@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { GetChannels } from "../services/ChannelServies"
+import { GetChannels } from "../services/ChannelServices"
 import { Link } from "react-router-dom"
 
 
@@ -22,6 +22,9 @@ const Home = ({ }) => {
   return (
     <>
       <div className="home">
+
+        <h1>Channels</h1>
+
 
         <div className="grid col-4">
           {channels.map((channel) => (

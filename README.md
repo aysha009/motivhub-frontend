@@ -1,16 +1,53 @@
-# React + Vite
+ # MotivHub
+### “Stay motivated. Grow together.”
+A goal-driven social platform where users support one another through shared progress and encouragement.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Overview
 
-Currently, two official plugins are available:
+**MotivHub** is a community-based application built around channels, each focused on a specific personal goal such as fitness, studying, saving money, or any other self-improvement objective.
+Users join channels that align with their goals and share p||"""osts, including written updates or images"", to document their journey. Members within the same channel motivate one another, exchange advice, and provide support—turning each channel into a focused, encouraging community.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+### 🎯 Goal-Focused Channels
+Each channel is dedicated to a specific goal.
+Users can join channels that match their personal objectives.
+Channels act as small communities centered around shared commitment.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### 📝 Progress Sharing
+Users can create posts inside channels.
+Posts may include written updates or images to track progress.
+Members can view and engage with each other’s posts.
 
-## Expanding the ESLint configuration
+### 💬 Community Interaction
+Users can comment on posts.
+Encourage, advise, and support others within the same channel.
+Foster accountability and long-term motivation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔐 Authentication & Security
+User authentication with JSON Web Tokens (JWT).
+Protected routes for creating, updating, and deleting content.
+Only authorized users can modify their own data.
+
+
+## 🛠️ Tech Stack
+
+**Backend** : Node.js
+
+**Framework** : Express.js
+
+**Database** : MangoDB
+
+
+
+## 🚀 Deployment
+
+MotivHub is currently in active development and will be deployed soon for public use.
+
+## 🧩 ERD (Entity Relationship Diagram)
+
+
+## 🔮 Future Improvements
+
+- Private messaging between users
+- Enhanced channel discovery and recommendations

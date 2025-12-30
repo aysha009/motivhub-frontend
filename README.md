@@ -11,7 +11,6 @@ Users join channels that align with their goals and share p||"""osts, including 
 
 ### 🎯 Goal-Focused Channels
 Each channel is dedicated to a specific goal.
-Users can join channels that match their personal objectives.
 Channels act as small communities centered around shared commitment.
 
 ### 📝 Progress Sharing
@@ -22,7 +21,7 @@ Members can view and engage with each other’s posts.
 ### 💬 Community Interaction
 Users can comment on posts.
 Encourage, advise, and support others within the same channel.
-Foster accountability and long-term motivation.
+Foster accountability
 
 ### 🔐 Authentication & Security
 User authentication with JSON Web Tokens (JWT).
@@ -40,14 +39,12 @@ Only authorized users can modify their own data.
 
 
 
-## 🚀 Deployment
-
-MotivHub is currently in active development and will be deployed soon for public use.
+## Figme link
+- https://www.figma.com/site/4Tuzg36tcn8dLm5cvchOJW/Untitled?node-id=0-1&t=Q3PUI9CPJJL15XGt-1
 
 ## 🧩 ERD (Entity Relationship Diagram)
-
+![imge](C2B03AB5-DF25-42BD-AE53-EA580BB5163B.jpeg)
 
 ## 🔮 Future Improvements
 
 - Private messaging between users
-- Enhanced channel discovery and recommendations

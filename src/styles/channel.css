@@ -1,4 +1,3 @@
-/* Page wrapper */
 .channel-page {
   min-height: 80vh;
   display: flex;
@@ -7,7 +6,6 @@
   background: #d7cece;
 }
 
-/* Card */
 .channel-card {
  max-width: 500px;
   padding: 2rem;
@@ -16,13 +14,11 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-/* Title */
 .channel-card h1 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Inputs */
 .channel-card input,
 .channel-card textarea {
   width: 100%;
@@ -38,7 +34,6 @@
   height: 100px;
 }
 
-/* Button */
 .channel-card button {
   width: 100%;
   padding: 0.75rem;

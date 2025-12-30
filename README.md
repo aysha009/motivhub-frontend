@@ -42,6 +42,9 @@ Only authorized users can modify their own data.
 ## Figme link
 - https://www.figma.com/site/4Tuzg36tcn8dLm5cvchOJW/Untitled?node-id=0-1&t=Q3PUI9CPJJL15XGt-1
 
+## Hierarchy Diagram 
+![Hierarchy Diagram ](<WhatsApp Image 2025-12-30 at 4.41.27 PM.jpeg>)
+
 ## 🧩 ERD (Entity Relationship Diagram)
 ![imge](C2B03AB5-DF25-42BD-AE53-EA580BB5163B.jpeg)
 

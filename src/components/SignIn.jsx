@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { SignInUser } from "../services/Auth"
+import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 
 const SignIn = ({ setUser }) => {
@@ -22,39 +23,40 @@ const SignIn = ({ setUser }) => {
   }
 
   return (
-<div className="auth-page">
-  <div className="auth-card">
-      <form className="col" onSubmit={handleSubmit}>
+    <div className="auth-page">
+      <div className="auth-card">
+        <form className="col" onSubmit={handleSubmit}>
 
-        <div className="input-wrapper">
-          <label htmlFor="email">Email</label>
-          <input
-            name="email"
-            type="email"
-            placeholder="example@example.com"
-            onChange={handleChange}
-            value={formValues.email}
-            required
-            autoComplete="email"
-          />
-        </div>
-        <div className="input-wrapper">
-          <label htmlFor="password">Password</label>
-          <input
-            name="password"
-            type="password"
-            placeholder="password"
-            onChange={handleChange}
-            value={formValues.password}
-            required
-            autoComplete="off"
-          />
-        </div>
-        <button disabled={!formValues.email || !formValues.password}>
-          Sign In
-        </button>
-      </form>
-    </div>
+          <div className="input-wrapper">
+            <label htmlFor="email">Email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="example@example.com"
+              onChange={handleChange}
+              value={formValues.email}
+              required
+              autoComplete="email"
+            />
+          </div>
+          <div className="input-wrapper">
+            <label htmlFor="password">Password</label>
+            <input
+              name="password"
+              type="password"
+              placeholder="password"
+              onChange={handleChange}
+              value={formValues.password}
+              required
+              autoComplete="off"
+            />
+            <Link to="register">if you don't have an account create one !</Link>
+          </div>
+          <button disabled={!formValues.email || !formValues.password}>
+            Sign In
+          </button>
+        </form>
+      </div>
     </div>
   )
 }

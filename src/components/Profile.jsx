@@ -30,7 +30,7 @@ const Profile = () => {
         <h3>Email: {user.email}</h3>
         <br></br>
         <br />
-        <br />
+       
 
         <h2>My Channels</h2>
 <br></br>

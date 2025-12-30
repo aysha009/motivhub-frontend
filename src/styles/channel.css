@@ -42,7 +42,7 @@
 .channel-card button {
   width: 100%;
   padding: 0.75rem;
-  background: #000;
+  background: #262525;
   color: white;
  font-size: large; 
  border: none;
@@ -52,4 +52,5 @@
 
 .channel-card button:hover {
   opacity: 0.85;
+  background-color: rgb(115, 113, 115);
 }

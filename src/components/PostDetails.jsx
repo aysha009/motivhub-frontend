@@ -79,6 +79,7 @@ const PostDetails = () => {
       <div className="post">
         <h3>Description: {post && post.body}</h3>
       </div>
+      
 
       <div className="comment">
         <form onSubmit={handleSubmit}>
@@ -97,6 +98,7 @@ const PostDetails = () => {
           <div className="card" key={comment._id}>
             {editingId === comment._id ? (
               <>
+              <div className="button-group">
                 <input
                   type="text"
                   value={editContent}
@@ -106,14 +108,18 @@ const PostDetails = () => {
                   Update
                 </button>
                 <button onClick={() => setEditingId(null)}>Cancel</button>
+                 </div>
               </>
             ) : (
+             
               <>
+              <div className="button-group">
                 <h2>{comment.content}</h2>
                 <button onClick={() => startEdit(comment)}>Edit</button>
                 <button onClick={() => handleDelete(comment._id)}>
                   Delete
                 </button>
+                </div>
               </>
             )}
           </div>

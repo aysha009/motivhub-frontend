@@ -1,8 +1,8 @@
+/* Post form container */
 .post-form-container {
   max-width: 500px;
-  margin: 3rem auto;
-  padding: 2rem;
   margin: 9rem auto;
+  padding: 2rem;
   background-color: #f7f7f7;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -30,15 +30,12 @@
   transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-
-
 .post-form-container button {
   margin-top: 1rem;
   padding: 0.75rem;
   border: none;
   border-radius: 8px;
-  background-color: #2b2a2d;
+  background-color: #212122;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -50,30 +47,29 @@
   background-color: #747377;
   transform: translateY(-2px);
 }
-/* Post list (posts inside a channel) */
+
+/* Post list inside a channel */
 .post {
   margin: 2rem auto;
   display: flex;
-
 }
 
-
-/* Post Details page */
+/* Post details page */
 .postDetails {
   max-width: 800px;
   margin: 10rem auto;
   padding: 2rem;
-  background-color:rgba(242, 241, 242, 0.899);
+  background-color: rgba(242, 241, 242, 0.899);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 /* Comment section */
 .comment {
   margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .comment form {
@@ -90,18 +86,15 @@
   outline: none;
 }
 
-.comment input:focus {
-  border-color: #080809;
-}
 
 .comment button {
   padding: 0.6rem 1.2rem;
-  border: none;
   border-radius: 8px;
   background-color: #111112;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .comment button:hover {
@@ -115,13 +108,50 @@
   border-radius: 10px;
   margin-bottom: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
-.comment .card h2 {
+/* Button group inside comment card */
+.comment .card .button-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* Comment text */
+.comment .card .button-group h2 {
   font-size: 1rem;
   font-weight: 400;
   color: #333;
+  margin: 0;
+  flex: 1; 
+  text-align: left;
 }
+
+/* Buttons inside card */
+.comment .card .button-group button {
+  background-color: #888484;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.comment .card .button-group button:hover {
+  background-color: #b6b6bb;
+  transform: translateY(-1px);
+}
+
+
 
 /* Channel details page */
 .channelDetails {
@@ -129,7 +159,7 @@
   padding: 1.5rem;
 }
 
-/* Header section */
+/* Header */
 .channel-header {
   display: flex;
   justify-content: space-between;
@@ -158,12 +188,6 @@
   transform: translateY(-2px);
 }
 
-/* Subtitle */
-.channel-subtitle {
-  margin-bottom: 1.5rem;
-  color: #444;
-}
-
 /* Post cards inside channel */
 .channelDetails .post {
   display: grid;
@@ -171,7 +195,7 @@
   gap: 1.5rem;
 }
 
-/* Reuse card style */
+/* Card style */
 .channelDetails .card {
   background-color: #f8f8f8;
   padding: 1.4rem;
@@ -185,7 +209,6 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
-/* Text */
 .channelDetails .card h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -198,8 +221,9 @@
   color: #555;
 }
 
-/* Link reset */
 .channelDetails .card a {
   text-decoration: none;
   color: inherit;
 }
+
+

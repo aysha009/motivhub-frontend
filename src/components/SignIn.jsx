@@ -22,8 +22,8 @@ const SignIn = ({ setUser }) => {
   }
 
   return (
-    <div className="col signin">
-      <img src="/images/signin.png" alt="Sign In Title Image" />
+<div className="auth-page">
+  <div className="auth-card">
       <form className="col" onSubmit={handleSubmit}>
 
         <div className="input-wrapper">
@@ -54,6 +54,7 @@ const SignIn = ({ setUser }) => {
           Sign In
         </button>
       </form>
+    </div>
     </div>
   )
 }

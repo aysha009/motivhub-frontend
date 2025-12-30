@@ -1,6 +1,8 @@
 import './styles/home.css'
 import './styles/channel.css'
 import './styles/profile.css'
+import './styles/post.css'
+
 import Nav from './components/Nav'
 import SignIn from './components/SignIn'
 import { Routes, Route, Router } from 'react-router-dom'

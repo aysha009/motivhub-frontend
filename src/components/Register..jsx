@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { RegisterUser } from '../services/Auth'
 import { useNavigate } from 'react-router-dom'
+import '../styles/register.css';
 
 const Register = () => {
   let navigate = useNavigate()
@@ -31,7 +32,8 @@ const Register = () => {
 
   return (
     <div className="col register">
-      <img src="/images/register.png" alt="Register Title Image" />
+      <div className="auth-page">
+  <div className="auth-card">
       <form onSubmit={handleSubmit}>
         <div className="input-wrapper">
           <label htmlFor="name">Name</label>
@@ -91,6 +93,8 @@ const Register = () => {
           Register
         </button>
       </form>
+    </div>
+    </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { GetPostsByChannel } from "../services/PostServices"
 import { GetChannelById } from "../services/ChannelServices"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
+import '../styles/post.css'
 
 
 
@@ -32,23 +33,22 @@ const ChannelDetails = () => {
     <>
 
       <div className="channelDetails">
-        <button>
-          <Link to={`/postForm/${id}`}>
-            Add new Post
+    <div className="channel-header">
+      <h1>{channel && channel.name}</h1>
+
+      <Link to={`/postForm/${id}`} className="add-post-btn">
+        + Add New Post
+      </Link>
+    </div>
+
+
+    <div className="post">
+      {posts.map((post) => (
+        <div className="card" key={post._id}>
+          <Link to={`/postDetails/${post._id}`}>
+            <h2>{post.title}</h2>
+            <h3>{post.body}</h3>
           </Link>
-        </button>
-        <h1>{channel && channel.name}</h1>
-        <h2>Posts in this Channel</h2>
-
-
-        <div className="grid col-4">
-          {posts.map((post) => (
-            <div className="card" key={post._id}>
-              <Link to={`/postDetails/${post._id}`}>
-                {/* image */}
-                <h2>{post.title}</h2>
-                <h3>{post.body}</h3>
-              </Link>
 
             </div>
           ))}
@@ -57,6 +57,7 @@ const ChannelDetails = () => {
         </div>
 
       </div>
+
     </>
   )
 

@@ -1,6 +1,15 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
+import { Signout } from "../services/Auth"
+
 
 const Nav = () => {
+  const navigate = useNavigate()
+  const handleLogOut = () => {
+    Signout()
+    navigate("/")
+  }
+  const isLoggedIn = !!localStorage.getItem("token")
+
   return (
     <nav className="navbar">
       <h4>MotivHub</h4>
@@ -10,10 +19,24 @@ const Nav = () => {
         <NavLink to="channelForm">Add Channel</NavLink>
         <> </>
 
-        <NavLink to="profile">My Profile</NavLink>
+        {isLoggedIn ? (
+          <>
+            <NavLink to="profile">My Profile</NavLink>
+
+            <button onClick={handleLogOut} >
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            <NavLink to="/">Sign In</NavLink>
+            <> </>
+          </>
+        )}
+
 
       </div>
-    </nav>
+    </nav >
   )
 }
 

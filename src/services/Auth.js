@@ -20,6 +20,16 @@ export const SignInUser = async (data) => {
   }
 }
 
+export const Signout = () => {
+  try {
+    localStorage.removeItem("token")
+    return true
+  } catch (error) {
+    throw error
+  }
+}
+
+
 export const CheckSession = async () => {
   try {
     const res = await Client.get("/auth/session")
@@ -29,3 +39,6 @@ export const CheckSession = async () => {
     throw error
   }
 }
+
+
+

@@ -50,7 +50,7 @@ Only authorized users can modify their own data.
 
 ## 🔮 Future Improvements
 
-- Private messaging between users
+- Private messaging between users 
 
 
 

@@ -2,7 +2,6 @@ import './styles/home.css'
 import './styles/channel.css'
 import './styles/profile.css'
 import './styles/post.css'
-
 import Nav from './components/Nav'
 import SignIn from './components/SignIn'
 import { Routes, Route, Router } from 'react-router-dom'
@@ -15,7 +14,6 @@ import { CheckSession } from './services/Auth'
 import Profile from './components/Profile'
 import PostDetails from './components/PostDetails'
 import PostForm from './components/PostForm'
-import posts from './posts'
 
 
 
@@ -26,7 +24,6 @@ const App = () => {
 
 
   const handleLogOut = () => {
-    // Resets all auth related state and clears localStorage
     setUser(null)
     localStorage.clear()
   }
@@ -60,17 +57,17 @@ const App = () => {
 
           <Route path="home" element={<Home />} />
 
-          {/* channel */}
+       
           <Route path="/home/:id" element={<ChannelDetails />} />
 
-          {/* channelForm */}
+     
           <Route path='/channelForm' element={<ChannelForm />} />
 
 
-          {/* postFrom */}
+         
           <Route path='/postForm/:id' element={<PostForm />} />
 
-          {/* channel */}
+      
           <Route path="/channel/:id" element={<ChannelDetails />} />
 
           <Route path="/postDetails/:id" element={<PostDetails />} />

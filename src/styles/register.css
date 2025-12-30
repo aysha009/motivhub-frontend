@@ -1,4 +1,3 @@
-/* Page wrapper for Register & SignIn */
 .auth-page {
   min-height: 80vh;
   display: flex;
@@ -8,7 +7,6 @@
   padding: 2rem;
 }
 
-/* Card container for Register & SignIn */
 .auth-card {
   max-width: 500px;
   width: 100%;
@@ -21,27 +19,23 @@
   gap: 1.5rem;
 }
 
-/* Title */
 .auth-card h1 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #333;
 }
 
-/* Input wrapper */
 .input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-/* Labels */
 .input-wrapper label {
   font-weight: 500;
   color: #222;
 }
 
-/* Inputs */
 .input-wrapper input {
   padding: 0.75rem 1rem;
   margin-bottom: 20px;
@@ -53,7 +47,6 @@
 }
 
 
-/* Button */
 .auth-card button {
   width: 100%;
   padding: 0.75rem;

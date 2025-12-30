@@ -4,7 +4,6 @@ body {
   background: #d7cece;
 }
 
-/* Navbar */
 .navbar {
   width: 100%;
   height: 70px;
@@ -19,21 +18,21 @@ body {
   z-index: 100;
 }
 
-/* App title */
+
 .navbar h4 {
   font-size: 1.4rem;
   font-weight: 700;
   color: #222;
 }
 
-/* Nav links container */
+
 .navbar div {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-/* Nav links */
+
 .navbar a {
   text-decoration: none;
   font-size: 1rem;
@@ -43,26 +42,25 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Hover effect */
+
 .navbar a:hover {
   background-color: #f2f2f2;
   color: #111;
 }
 
-/* Active link (NavLink) */
+
 .navbar a.active {
   background-color: #222;
   color: #ffffff;
 }
-/* home */
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page container */
+
 .home {
   padding: 2rem;
   max-width: 1200px;
@@ -73,7 +71,7 @@ body {
 
 
 
-/* Grid layout */
+
 .grid {
    column-count: 4;
   display: grid;
@@ -84,7 +82,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-/* Card style */
+
 .card {
   break-inside: avoid;
   background-color:rgba(242, 241, 242, 0.899);
@@ -95,26 +93,25 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Hover effect */
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Link reset */
+
 .card a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Channel name */
+
 .card h2 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   color: #222;
 }
 
-/* Channel description */
 .card h3 {
   font-size: 1rem;
   font-weight: 400;
